@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
@@ -24,13 +25,11 @@ const ServicesSection = () => {
               <CardDescription className="text-muted-foreground mb-6 text-base">
                 Agende consultas e exames a qualquer hora, de qualquer lugar.
               </CardDescription>
-              <Button 
-                variant="default" 
-                className="w-full"
-                onClick={() => window.open(`https://wa.me/5537990848668?text=Olá! Gostaria de agendar uma consulta para meu pet.`, '_blank')}
-              >
-                Agendar Consulta
-              </Button>
+              <Link to="/agendamento" className="w-full">
+                <Button variant="default" className="w-full">
+                  Agendar Consulta
+                </Button>
+              </Link>
             </CardContent>
           </Card>
 
