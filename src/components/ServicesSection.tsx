@@ -24,7 +24,11 @@ const ServicesSection = () => {
               <CardDescription className="text-muted-foreground mb-6 text-base">
                 Agende consultas e exames a qualquer hora, de qualquer lugar.
               </CardDescription>
-              <Button variant="default" className="w-full">
+              <Button 
+                variant="default" 
+                className="w-full"
+                onClick={() => window.open(`https://wa.me/5537990848668?text=Olá! Gostaria de agendar uma consulta para meu pet.`, '_blank')}
+              >
                 Agendar Consulta
               </Button>
             </CardContent>
@@ -43,7 +47,11 @@ const ServicesSection = () => {
               <CardDescription className="text-muted-foreground mb-6 text-base">
                 Converse conosco para tirar dúvidas ou em casos de emergência.
               </CardDescription>
-              <Button variant="whatsapp" className="w-full">
+              <Button 
+                variant="whatsapp" 
+                className="w-full"
+                onClick={() => window.open(`https://wa.me/5537990848668?text=Olá! Preciso de ajuda com meu pet.`, '_blank')}
+              >
                 Chamar no WhatsApp
               </Button>
             </CardContent>

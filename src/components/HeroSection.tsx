@@ -17,7 +17,11 @@ const HeroSection = () => {
           Conectando você e seu pet à saúde e cuidado 24h.
         </p>
         
-        <Button variant="hero" size="lg">
+        <Button 
+          variant="hero" 
+          size="lg"
+          onClick={() => window.open(`https://wa.me/5537990848668?text=Olá! Gostaria de agendar uma consulta para meu pet.`, '_blank')}
+        >
           Agende uma Consulta
         </Button>
       </div>
