@@ -27,7 +27,7 @@ const HeroSection = () => {
           <Button 
             variant="outline"
             size="lg"
-            onClick={() => window.open(`https://wa.me/5537990848668?text=Olá! Preciso de ajuda urgente com meu pet.`, '_blank')}
+            onClick={() => window.open('https://api.whatsapp.com/message/C7IF66NFZK5NM1?autoload=1&app_absent=0', '_blank')}
           >
             Emergência WhatsApp
           </Button>
