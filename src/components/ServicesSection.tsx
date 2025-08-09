@@ -49,7 +49,7 @@ const ServicesSection = () => {
               <Button 
                 variant="whatsapp" 
                 className="w-full"
-                onClick={() => window.open('https://api.whatsapp.com/message/C7IF66NFZK5NM1?autoload=1&app_absent=0', '_blank')}
+                onClick={() => window.open('https://wa.me/553799084866', '_blank')}
               >
                 Chamar no WhatsApp
               </Button>

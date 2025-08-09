@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { MessageCircle } from "lucide-react";
 import vetLifeLogo from "@/assets/vetlife-logo.png";
 
 const HeroSection = () => {
@@ -27,8 +28,10 @@ const HeroSection = () => {
           <Button 
             variant="outline"
             size="lg"
-            onClick={() => window.open('https://api.whatsapp.com/message/C7IF66NFZK5NM1?autoload=1&app_absent=0', '_blank')}
+            className="border-green-500 text-green-600 hover:bg-green-50 hover:text-green-700"
+            onClick={() => window.open('https://wa.me/553799084866', '_blank')}
           >
+            <MessageCircle className="w-5 h-5 text-green-600" />
             Emergência WhatsApp
           </Button>
         </div>
