@@ -85,7 +85,7 @@ ${data.motivo}
 ${data.observacoes ? `*OBSERVAÇÕES:*\n${data.observacoes}` : ''}
     `.trim();
 
-    const whatsappUrl = `https://api.whatsapp.com/message/C7IF66NFZK5NM1?autoload=1&app_absent=0&text=${encodeURIComponent(mensagem)}`;
+    const whatsappUrl = `https://wa.me/5537990848668?text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -188,10 +188,6 @@ ${data.observacoes ? `*OBSERVAÇÕES:*\n${data.observacoes}` : ''}
                               <SelectContent>
                                 <SelectItem value="cao">Cão</SelectItem>
                                 <SelectItem value="gato">Gato</SelectItem>
-                                <SelectItem value="passaro">Pássaro</SelectItem>
-                                <SelectItem value="coelho">Coelho</SelectItem>
-                                <SelectItem value="hamster">Hamster</SelectItem>
-                                <SelectItem value="outro">Outro</SelectItem>
                               </SelectContent>
                             </Select>
                             <FormMessage />
