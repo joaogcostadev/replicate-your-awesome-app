@@ -85,7 +85,7 @@ ${data.motivo}
 ${data.observacoes ? `*OBSERVAÇÕES:*\n${data.observacoes}` : ''}
     `.trim();
 
-    const whatsappUrl = `https://wa.me/5537990848668?text=${encodeURIComponent(mensagem)}`;
+    const whatsappUrl = `https://wa.me/553799084866?text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappUrl, '_blank');
   };
 
